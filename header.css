@@ -116,7 +116,7 @@ ul li:hover ul {
 }
 #text2 {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 30px;
+    font-size: 40px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -128,7 +128,8 @@ ul li:hover ul {
     margin-bottom: 30px;
     margin-left: 20px;
     margin-right: 20px;
-    color: rgba(255, 255, 255, 0.8)
+    color: rgba(255, 255, 255, 0.8);
+    font-size:20px;
 }
 #text5 {
     background-color: #292929;
