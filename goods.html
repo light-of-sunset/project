@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="header.css">
+    <title>极乐迪斯科</title>
+    <style>
+        .box {
+            background-color: rgba(0, 0, 0, 0.9);
+            height: 1000px;
+            width: 76%;
+            margin-left: 12%;
+            margin-right: 12%;
+            margin-top: 240px;
+        }
+
+        ul li a {
+            color: blanchedalmond;
+            display: block;
+            text-decoration: none;
+
+        }
+
+        .wrap1 {
+            width: 100px;
+            height: 300px;
+            border: 0.5px solid;
+            position: fixed;
+            top: 30%;
+        }
+
+        .head1 {
+            font-weight: bold;
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            line-height: 60px;
+            font-size: 20px;
+            color: #000000;
+            text-align: center;
+        }
+
+        .list:hover {
+            color: tomato;
+            background-color: silver;
+        }
+
+        .list {
+            box-sizing: border-box;
+            width: 100px;
+            padding: 3px;
+            margin-top: 0.5px;
+            margin-bottom: 0.5px;
+            background-color: rgba(38, 38, 38, 0.63);
+            text-align: center;
+            font-size: 12px;
+            color: rgb(169, 177, 177);
+            height: 100px;
+        }
+
+        .wrap1 ul li a {
+            font-size: 30px;
+            margin-top: 27px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 30px;
+            align-items: center;
+            justify-items: center;
+            margin-bottom: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            color: rgba(255, 255, 255, 0.8)
+        }
+    </style>
+</head>
+
+<body background="img/1.jpg">
+    <header>
+        <div class="menu">
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">总览</a></li>
+                    <li><a href="artbook.html">设定集</a></li>
+                    <li>
+                        <a href="goods.html">物品</a>
+                        <ul>
+                            <li><a href="goods.html">工具</a></li>
+                            <li><a href="index1.html">道具</a></li>
+                            <li><a href="goods3.html">互动</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="word.html">世界设定</a></li>
+                    <li><a href="report.html">报告</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="lg">
+        <p>极乐迪斯科<br>Disco Elysium</p>
+    </div>
+
+    <div class="wrap1">
+        <ul>
+            <li class="list"><a href="goods.html" style="text-decoration: none;">工具</a></li>
+            <li class="list"><a href="index1.html" style="text-decoration: none;">道具</a></li>
+            <li class="list"><a href="goods3.html" style="text-decoration: none;">互动</a></li>
+        </ul>
+    </div>
+    <div class="box">
+        <div id="text2">工具</div>
+        <div class="text1" style="border-bottom:1px solid #ccc;margin-bottom: 40px;">
+            工具是需要在手里拿着才能发挥作用的物品，比如烟酒等药物都要先装备在手上才能使用，手电筒和撬棍也要装备上才能与某些场景/物体互动。警探一次只能拿两个道具。</div>
+        <div class="grid">
+            <div><img src="img/g1.png" width="80%">
+                <p style="text-align: center;">氨盐安瓿瓶</p>
+            </div>
+            <div><img src="img/g2.png" width="80%">
+                <p style="text-align: center;">切链器</p>
+            </div>
+            <div><img src="img/g3.png" width="80%">
+                <p style="text-align: center;">黄色塑料袋</p>
+            </div>
+            <div><img src="img/g4.png" width="80%">
+                <p style="text-align: center;">录音机“哈蒙沃斯W02”</p>
+            </div>
+            <div><img src="img/g5.png" width="80%">
+                <p style="text-align: center;">撬棍</p>
+            </div>
+            <div><img src="img/g6.png" width="80%">
+                <p style="text-align: center;">遗忘手册</p>
+            </div>
+            <div><img src="img/g7.png" width="80%">
+                <p style="text-align: center;">失败与怨恨手册</p>
+            </div>
+            <div><img src="img/g8.png" width="80%">
+                <p style="text-align: center;">库瓦桑德KR多用工具</p>
+            </div>
+            <div><img src="img/g9.png" width="80%">
+                <p style="text-align: center;">手电筒</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

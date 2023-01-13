@@ -1,0 +1,147 @@
+ul {
+    list-style-type: none;
+}
+
+* {
+    margin: 0px 0px;
+}
+.menu {
+    background-color: rgba(38,38,38,0.63);
+}
+
+.nav {
+
+    margin: 0 auto;
+    width:900px;
+    height: 60px;
+}
+
+.nav a {
+    float:left;
+    width: 180px;
+    line-height: 60px;
+    text-decoration: none;
+    font-size: 40px;
+    color: rgba(241,227,221,1);
+    text-align: center;
+}
+
+.nav li a:hover {
+    text-decoration: none;    
+    color: white;
+}
+
+.nav li a:link {
+    text-decoration: none;
+}
+.biaoge table thead th {
+    background-color: #942810;
+    color: #FFFFFF;
+    border: #818083 solid 1px;
+    padding: 0.25rem 0.75rem;
+    box-shadow: none;
+    font-weight: 600px;
+    font-size: 1.2em;
+}
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 2px;
+    width:60%
+}
+th {
+    display: table-cell;
+    font-weight: bold;
+}
+.biaoge table th{
+    padding: 0.75rem;
+    border: #4C4C4C solid 1px;
+    text-align: left;
+}
+.biaoge table td {
+    padding: 0.75rem;
+    border: #4C4C4C solid 1px;
+    text-align: left;
+    opacity: 0.8;
+}
+.biaoge table {
+    display: table;
+    overflow: auto;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+}
+body {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#lg {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    width: 40%;
+    position: absolute;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    float: left; 
+}
+ul li ul li a{
+    background-color: rgba(38,38,38,0.63);
+}
+
+
+ul li a:hover {
+    background-color: rgb(169, 177, 177);
+    opacity: 0.9;
+}
+
+ul li ul {
+    display: none;
+}
+
+
+ul li ul li {
+    float: none;
+}
+
+
+ul li:hover ul {
+    display: block;
+
+}
+#text2 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#text1 {
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.text1 {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.8)
+}
+#text5 {
+    background-color: #292929;
+}
+
+#text4 {
+    background-color: #191f31;
+}
+.text3 {
+    margin: 40px;
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    width:50%
+    
+}
+

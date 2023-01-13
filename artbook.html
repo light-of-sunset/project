@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="header.css">
+  <title>极乐迪斯科</title>
+  <style>
+    a {
+      list-style: none;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .lunbo {
+      width: 100%;
+      height: 40%;
+    }
+
+    .content {
+      width: 800px;
+      height: 300px;
+      margin: 20px auto;
+      position: relative;
+    }
+
+    #item {
+      width: 100%;
+      height: 100%;
+
+    }
+
+    img {
+      width: 100%;
+    }
+    .item {
+      position: absolute;
+      opacity: 0;
+      transition: all 1s;
+
+    }
+
+    .item.active {
+      opacity: 1;
+    }
+    #btn-left {
+      left: 0;
+      top: 75%;
+      transform: translateY(-60%);
+      cursor: pointer;
+      opacity: 0;
+      width: 30px;
+      height: 69px;
+      font-size: 30px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.4);
+      line-height: 69px;
+      padding-left: 5px;
+      z-index: 10;
+      position: absolute;
+    }
+
+    .lunbo:hover #btn-left {
+
+      opacity: 1;
+    }
+    .white {
+      background-color: #FFFFFF;
+    }
+    
+    .box {
+      background-color: rgba(0, 0, 0, 0.9);
+      height: 600px;
+      width: 82%;
+      margin-left: 9%;
+      margin-right: 9%;
+      margin-top: 240px;
+      margin-bottom:400px ;
+    }
+    #btn-right {
+      width: 26px;
+      height: 69px;
+      font-size: 30px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.4);
+      line-height: 69px;
+      padding-left: 5px;
+      z-index: 10;
+      position: absolute;
+      right: 0;
+      top: 75%;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(-60%);
+    }
+
+    .lunbo:hover #btn-right {
+      opacity: 1;
+    }
+
+    #circle {
+      height: 20px;
+      display: flex;
+      position: absolute;
+      bottom: -40%;
+      right: 25px;
+    }
+
+    .circle {
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      border: 2px solid white;
+      background: rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      margin: 5px;
+    }
+  </style>
+</head>
+
+<body background="img/1.jpg">
+  <header>
+    <div class="menu">
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">总览</a></li>
+          <li><a href="artbook.html">设定集</a></li>
+          <li>
+            <a href="goods.html">物品</a>
+            <ul>
+              <li><a>工具</a></li>
+              <li><a>服装</a></li>
+              <li><a>互动</a></li>
+            </ul>
+          </li>
+          <li><a href="word.html">世界设定</a></li>
+          <li><a href="report.html">报告</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div id="lg">
+    <p>极乐迪斯科<br>Disco Elysium</p>
+  </div>
+  <div class="box">
+    <div id="text2" style="border-bottom:1px solid #ccc;margin-bottom: 40px;">设定集</div>
+    <div class="lunbo">
+    <div class="content">
+      <ul id="item">
+        <li class="item active">
+          <a href=" "><img src="img/b1.png"></a>
+        </li>
+        <li class="item">
+          <a href="#"><img src="img/b2.png"></a>
+        </li>
+        <li class="item">
+          <a href="#"><img src="img/b3.png"></a>
+        </li>
+        <li class="item">
+          <a href="#"><img src="img/b4.png"></a>
+        </li>
+        <li class="item">
+          <a href="#"><img src="img/b5.png"></a>
+        </li>
+        <li class="item">
+          <a href=" "><img src="img/b6.png"></a>
+        </li>
+        <li class="item">
+          <a href="#"><img src="img/b7.png"></a>
+        </li>
+        <li class="item">
+          <a href="#"><img src="img/b8.png"></a>
+        </li>
+        <li class="item">
+          <a href="#"><img src="img/b9.png"></a>
+        </li>
+        <li class="item">
+          <a href="#"><img src="img/b10.png"></a>
+        </li>
+      </ul>
+      <div id="btn-left">
+        <</div>
+          <div id="btn-right">></div>
+          <ul id="circle">
+
+            <li class="circle white"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+          </ul>
+      </div>
+    </div>
+  </div>  
+    <script>
+      window.onload = function () {
+        var items = document.getElementsByClassName("item");
+        var circles = document.getElementsByClassName("circle");
+        var leftBtn = document.getElementById("btn-left");
+        var rightBtn = document.getElementById("btn-right");
+        var content = document.getElementsByClassName("content");
+        var index = 0;
+        var clearclass = function () {
+          for (let i = 0; i < items.length; i++) {
+            items[i].className = "item";
+            circles[i].className = "circle";
+            circles[i].setAttribute("num", i);
+          }
+        }
+        function move() {
+          clearclass();
+          items[index].className = "item active";
+          circles[index].className = "circle white";
+        }
+        rightBtn.onclick = function () {
+          if (index < items.length - 1) {
+            index++;
+          }
+          else {
+            index = 0;
+          }
+          move();
+        }
+        leftBtn.onclick = function () {
+          if (index >0) {
+            index--;
+          }
+          else {
+            index = items.length - 1;
+          }
+          move();
+        }
+        for (var i = 0; i < circles.length; i++) {
+          circles[i].addEventListener("click", function () {
+            var point_index = this.getAttribute("num");
+            index = point_index;
+            move();
+          })
+        }
+      }
+    </script>
+</body>
+
+</html>
